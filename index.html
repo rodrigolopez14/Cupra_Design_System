@@ -1,0 +1,868 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    
+    <meta charset="UTF-8" />
+    <meta name="viewport" content=" initial-scale=1.0" />
+    
+    
+  
+    <style>
+      .no{
+        width: fit-content;
+        display: flex;
+        align-items: flex-start;
+      }
+      .no1 {
+        margin: 0px;
+      }
+      .divito {
+        height: 32px;
+        border: 1px solid #190F14;
+      }
+      .hey {
+        background-color: black;
+        padding: 20px ;
+      }
+      .hey1 {
+        background-color: black;
+        height: 30px;
+        width: 30px;
+        padding: 2px 4px 1px 3px;
+        padding: calc(padding - 1px);
+      }
+      .h1black {
+        color: white
+      }
+      .h1custom  {
+        color: #058;
+        font-size: 1em;
+        margin-bottom: .3em;
+        text-align: center;
+        
+      }
+      .blackbckgr {
+        background-color: black;
+        padding: 20px;
+      }
+      .h1white {
+        color: white
+      }
+    </style>
+  </head>
+<body>
+    <script  type="module" src="./index.js"></script>
+    <h1>HELLO CUPRA!</h1>
+    <div class="hey1"></div>
+    <br>
+    
+
+      <cupra-icons data-icon-selection="360"></cupra-icons>
+    <cupra-icons data-icon-selection="arrow"></cupra-icons>
+    <cupra-icons data-icon-selection="arrow-down"></cupra-icons>
+    <cupra-icons data-icon-selection="arrow-right"></cupra-icons>
+    <cupra-icons data-icon-selection="arrow-left"></cupra-icons>
+    <cupra-icons data-icon-selection='alert-rounded'></cupra-icons>
+    <cupra-icons data-icon-selection='alert-triangle'></cupra-icons>
+    <cupra-icons data-icon-selection='approval-check'></cupra-icons>
+    <cupra-icons data-icon-selection='approval'></cupra-icons>
+    <cupra-icons data-icon-selection='bag'></cupra-icons>
+    <cupra-icons data-icon-selection='bill'></cupra-icons>
+    <cupra-icons data-icon-selection='cable'></cupra-icons>
+    <cupra-icons data-icon-selection='cO2'></cupra-icons>
+    <cupra-icons data-icon-selection='calculator'></cupra-icons>
+    <cupra-icons data-icon-selection='calendar'></cupra-icons>
+    <cupra-icons data-icon-selection='car-frontal'></cupra-icons>
+    <cupra-icons data-icon-selection='car-lateral'></cupra-icons>
+    <cupra-icons data-icon-selection='cart'></cupra-icons>
+    <cupra-icons data-icon-selection='check'></cupra-icons>
+    <cupra-icons data-icon-selection='close'></cupra-icons>
+    <cupra-icons data-icon-selection='contact'></cupra-icons>
+    <cupra-icons data-icon-selection='copy'></cupra-icons>
+    <cupra-icons data-icon-selection='credit-card'></cupra-icons>
+    <cupra-icons data-icon-selection='delete'></cupra-icons>
+    <cupra-icons data-icon-selection='document-download'></cupra-icons>
+    <cupra-icons data-icon-selection='document'></cupra-icons>
+    <cupra-icons data-icon-selection='dots'></cupra-icons>
+    <cupra-icons data-icon-selection='download'></cupra-icons>
+    <cupra-icons data-icon-selection='edit'></cupra-icons>
+    <cupra-icons data-icon-selection='electric'></cupra-icons>
+    <cupra-icons data-icon-selection='empty-cart'></cupra-icons>
+    <cupra-icons data-icon-selection='energy'></cupra-icons>
+    <cupra-icons data-icon-selection='expand'></cupra-icons>
+    <cupra-icons data-icon-selection='external'></cupra-icons>
+    <cupra-icons data-icon-selection='eye-closed'></cupra-icons>
+    <cupra-icons data-icon-selection='eye-open'></cupra-icons>
+    <cupra-icons data-icon-selection='filters'></cupra-icons>
+    <cupra-icons data-icon-selection='fuel'></cupra-icons>
+    <cupra-icons data-icon-selection='garage'></cupra-icons>
+    <cupra-icons data-icon-selection='info-rounded'></cupra-icons>
+    <cupra-icons data-icon-selection='info-rounded'></cupra-icons>
+    <cupra-icons data-icon-selection='info-triangle'></cupra-icons>
+    <cupra-icons data-icon-selection='like-fill'></cupra-icons>
+    <cupra-icons data-icon-selection='like'></cupra-icons>
+    <cupra-icons data-icon-selection='loader'></cupra-icons>
+    <cupra-icons data-icon-selection='location'></cupra-icons>
+    <cupra-icons data-icon-selection='lock'></cupra-icons>
+    <cupra-icons data-icon-selection='logout'></cupra-icons>
+    <cupra-icons data-icon-selection='mail'></cupra-icons>
+    <cupra-icons data-icon-selection='mall'></cupra-icons>
+    <cupra-icons data-icon-selection='minus'></cupra-icons>
+    <cupra-icons data-icon-selection='mobile'></cupra-icons>
+    <cupra-icons data-icon-selection='notification'></cupra-icons>
+    <cupra-icons data-icon-selection='orders'></cupra-icons>
+    <cupra-icons data-icon-selection='pause'></cupra-icons>
+    <cupra-icons data-icon-selection='piggy'></cupra-icons>
+    <cupra-icons data-icon-selection='play'></cupra-icons>
+    <cupra-icons data-icon-selection='plus'></cupra-icons>
+    <cupra-icons data-icon-selection='position'></cupra-icons>
+    <cupra-icons data-icon-selection='profile'></cupra-icons>
+    <cupra-icons data-icon-selection='repair'></cupra-icons>
+    <cupra-icons data-icon-selection='road'></cupra-icons>
+    <cupra-icons data-icon-selection='search'></cupra-icons>
+    <cupra-icons data-icon-selection='share'></cupra-icons>
+    <cupra-icons data-icon-selection='star'></cupra-icons>
+    <cupra-icons data-icon-selection='store'></cupra-icons>
+    <cupra-icons data-icon-selection='suitcase'></cupra-icons>
+    <cupra-icons data-icon-selection='support'></cupra-icons>
+    <cupra-icons data-icon-selection='tag'></cupra-icons>
+    <cupra-icons data-icon-selection='ticket'></cupra-icons>
+    <cupra-icons data-icon-selection='time'></cupra-icons>
+    <cupra-icons data-icon-selection='upholstery'></cupra-icons>
+    <cupra-icons data-icon-selection='view-list'></cupra-icons>
+    <cupra-icons data-icon-selection='view'></cupra-icons>
+    <cupra-icons data-icon-selection='warranty'></cupra-icons>
+    <cupra-icons data-icon-selection='whatsapp'></cupra-icons>
+    <cupra-icons data-icon-selection='wlan'></cupra-icons>
+    <cupra-icons data-icon-selection='write'></cupra-icons>
+    <cupra-icons data-icon-selection='wrong'></cupra-icons>
+
+    <h1>CUPRA BUTTONS</h1>
+    <H1>LARGE</H1>
+    <cupra-button data-hierarchy="primary" data-color="light" data-size="L" data-state="active" data-size-width="fit-content">
+      
+    </cupra-button>
+
+    <br>
+    <cupra-button data-hierarchy="primary" data-color="light" data-size="L" data-state="focus" data-size-width="fit-content">
+      
+    </cupra-button>
+    <br>
+    <cupra-button data-hierarchy="primary" data-color="light" data-size="L" data-state="inactive" data-size-width="fit-content">
+      
+    </cupra-button>
+    <br>
+    <cupra-button data-hierarchy="primary" data-color="light" data-state="active" data-size="L" data-icon-selection="calendar" data-size-width="fit-content">
+      
+    </cupra-button>
+    <br>
+    <cupra-button data-hierarchy="primary" data-color="light" data-state="focus" data-size="L" data-icon-selection="calendar" data-size-width="fit-content">
+      
+    </cupra-button>
+    <br>
+    <cupra-button data-hierarchy="primary" data-color="light" data-state="inactive" data-size="L" data-icon-selection="calendar" data-size-width="fit-content">
+      
+    </cupra-button>
+    <H1>MEDIUM</H1>
+
+    <cupra-button data-hierarchy="primary" data-color="light" data-size="M" data-state="active" data-size-width="fit-content">
+      
+    </cupra-button>
+
+    <br>
+    <cupra-button data-hierarchy="primary" data-color="light" data-size="M" data-state="focus" data-size-width="fit-content">
+      
+    </cupra-button>
+    <br>
+    <cupra-button data-hierarchy="primary" data-color="light" data-size="M" data-state="inactive" data-size-width="fit-content">
+      
+    </cupra-button>
+    <br>
+    <cupra-button data-hierarchy="primary" data-color="light" data-state="active" data-size="M" data-icon-selection="calendar" data-size-width="fit-content">
+      
+    </cupra-button>
+    <br>
+    <cupra-button data-hierarchy="primary" data-color="light" data-state="focus" data-size="M" data-icon-selection="calendar" data-size-width="fit-content">
+      
+    </cupra-button>
+    <br>
+    <cupra-button data-hierarchy="primary" data-color="light" data-state="inactive" data-size="M" data-icon-selection="calendar" data-size-width="fit-content">
+      
+    </cupra-button>
+
+
+    <H1>SMALL</H1>
+
+    <cupra-button data-hierarchy="primary" data-color="light" data-size="S" data-state="active" data-size-width="fit-content">
+      
+    </cupra-button>
+
+    <br>
+    <cupra-button data-hierarchy="primary" data-color="light" data-size="S" data-state="focus" data-size-width="fit-content">
+      
+    </cupra-button>
+    <br>
+    <cupra-button data-hierarchy="primary" data-color="light" data-size="S" data-state="inactive" data-size-width="fit-content">
+      
+    </cupra-button>
+    <br>
+    <cupra-button data-hierarchy="primary" data-color="light" data-state="active" data-size="S" data-icon-selection="calendar" data-size-width="fit-content">
+      
+    </cupra-button>
+    <br>
+    <cupra-button data-hierarchy="primary" data-color="light" data-state="focus" data-size="S" data-icon-selection="calendar" data-size-width="fit-content">
+      
+    </cupra-button>
+    <br>
+    <cupra-button data-hierarchy="primary" data-color="light" data-state="inactive" data-size="S" data-icon-selection="calendar" data-size-width="fit-content">
+      
+    </cupra-button>
+
+    <div class="hey">
+      <H1 class="h1white">LARGE</H1>
+    <cupra-button data-hierarchy="primary" data-color="dark" data-size="L" data-state="active" data-size-width="fit-content">
+      
+    </cupra-button>
+
+    <br>
+    <cupra-button data-hierarchy="primary" data-color="dark" data-size="L" data-state="focus" data-size-width="fit-content">
+      
+    </cupra-button>
+    <br>
+    <cupra-button data-hierarchy="primary" data-color="dark" data-size="L" data-state="inactive" data-size-width="fit-content">
+      
+    </cupra-button>
+    <br>
+    <cupra-button data-hierarchy="primary" data-color="dark" data-state="active" data-size="L" data-icon-selection="calendar" data-size-width="fit-content">
+      
+    </cupra-button>
+    <br>
+    <cupra-button data-hierarchy="primary" data-color="dark" data-state="focus" data-size="L" data-icon-selection="calendar" data-size-width="fit-content">
+      
+    </cupra-button>
+    <br>
+    <cupra-button data-hierarchy="primary" data-color="dark" data-state="inactive" data-size="L" data-icon-selection="calendar" data-size-width="fit-content">
+      
+    </cupra-button>
+    <H1 class="h1white">MEDIUM</H1>
+
+    <cupra-button data-hierarchy="primary" data-color="dark" data-size="M" data-state="active" data-size-width="fit-content">
+      
+    </cupra-button>
+
+    <br>
+    <cupra-button data-hierarchy="primary" data-color="dark" data-size="M" data-state="focus" data-size-width="fit-content">
+      
+    </cupra-button>
+    <br>
+    <cupra-button data-hierarchy="primary" data-color="dark" data-size="M" data-state="inactive" data-size-width="fit-content">
+      
+    </cupra-button>
+    <br>
+    <cupra-button data-hierarchy="primary" data-color="dark" data-state="active" data-size="M" data-icon-selection="calendar" data-size-width="fit-content">
+      
+    </cupra-button>
+    <br>
+    <cupra-button data-hierarchy="primary" data-color="dark" data-state="focus" data-size="M" data-icon-selection="calendar" data-size-width="fit-content">
+      
+    </cupra-button>
+    <br>
+    <cupra-button data-hierarchy="primary" data-color="dark" data-state="inactive" data-size="M" data-icon-selection="calendar" data-size-width="fit-content">
+      
+    </cupra-button>
+
+
+    <H1 class="h1white">SMALL</H1>
+
+    <cupra-button data-hierarchy="primary" data-color="dark" data-size="S" data-state="active" data-size-width="fit-content">
+      
+    </cupra-button>
+
+    <br>
+    <cupra-button data-hierarchy="primary" data-color="dark" data-size="S" data-state="focus" data-size-width="fit-content">
+      
+    </cupra-button>
+    <br>
+    <cupra-button data-hierarchy="primary" data-color="dark" data-size="S" data-state="inactive" data-size-width="fit-content">
+      
+    </cupra-button>
+    <br>
+    <cupra-button data-hierarchy="primary" data-color="dark" data-state="active" data-size="S" data-icon-selection="calendar" data-size-width="fit-content">
+      
+    </cupra-button>
+    <br>
+    <cupra-button data-hierarchy="primary" data-color="dark" data-state="focus" data-size="S" data-icon-selection="calendar" data-size-width="fit-content">
+      
+    </cupra-button>
+    <br>
+    <cupra-button data-hierarchy="primary" data-color="dark" data-state="inactive" data-size="S" data-icon-selection="calendar" data-size-width="fit-content">
+      
+    </cupra-button>
+    </div>
+    <br>
+    <h1>SECONDARY</h1>
+    <H1>L</H1>
+    <cupra-button data-hierarchy="secondary" data-color="light" data-size="L" data-state="active" data-size-width="fit-content">
+      
+    </cupra-button>
+    <br>
+    <cupra-button data-hierarchy="secondary" data-color="light" data-size="L" data-state="focus" data-size-width="fit-content">
+      
+    </cupra-button>
+    <br>
+    <cupra-button data-hierarchy="secondary" data-color="light" data-size="L" data-state="inactive" data-size-width="fit-content">
+      
+    </cupra-button>
+    <H1>M</H1>
+    <cupra-button data-hierarchy="secondary" data-color="light" data-size="M" data-state="active" data-size-width="fit-content">
+      
+    </cupra-button>
+    <br>
+    <cupra-button data-hierarchy="secondary" data-color="light" data-size="M" data-state="focus" data-size-width="fit-content">
+      
+    </cupra-button>
+    <br>
+    <cupra-button data-hierarchy="secondary" data-color="light" data-size="M" data-state="inactive" data-size-width="fit-content">
+      
+    </cupra-button>
+    <H1>S</H1>
+    <cupra-button data-hierarchy="secondary" data-color="light" data-size="S" data-state="active" data-size-width="fit-content">
+      
+    </cupra-button>
+    <br>
+    <cupra-button data-hierarchy="secondary" data-color="light" data-size="S" data-state="focus" data-size-width="fit-content">
+      
+    </cupra-button>
+    <br>
+    <cupra-button data-hierarchy="secondary" data-color="light" data-size="S" data-state="inactive" data-size-width="fit-content">
+      
+    </cupra-button>
+
+    <H1>L</H1>
+<cupra-button data-hierarchy="secondary" data-icon-selection="calendar" data-color="light" data-size="L" data-state="active" data-size-width="fit-content">
+  
+</cupra-button>
+<br>
+<cupra-button data-hierarchy="secondary" data-icon-selection="calendar" data-color="light" data-size="L" data-state="focus" data-size-width="fit-content">
+  
+</cupra-button>
+<br>
+<cupra-button data-hierarchy="secondary" data-icon-selection="calendar" data-color="light" data-size="L" data-state="inactive" data-size-width="fit-content">
+  
+</cupra-button>
+<H1>M</H1>
+<cupra-button data-hierarchy="secondary" data-icon-selection="calendar" data-color="light" data-size="M" data-state="active" data-size-width="fit-content">
+  
+</cupra-button>
+<br>
+<cupra-button data-hierarchy="secondary" data-icon-selection="calendar" data-color="light" data-size="M" data-state="focus" data-size-width="fit-content">
+  
+</cupra-button>
+<br>
+<cupra-button data-hierarchy="secondary" data-icon-selection="calendar" data-color="light" data-size="M" data-state="inactive" data-size-width="fit-content">
+  
+</cupra-button>
+<H1>S</H1>
+<cupra-button data-hierarchy="secondary" data-icon-selection="calendar" data-color="light" data-size="S" data-state="active" data-size-width="fit-content">
+  
+</cupra-button>
+<br>
+<cupra-button data-hierarchy="secondary" data-icon-selection="calendar" data-color="light" data-size="S" data-state="focus" data-size-width="fit-content">
+  
+</cupra-button>
+<br>
+<cupra-button data-hierarchy="secondary" data-icon-selection="calendar" data-color="light" data-size="S" data-state="inactive" data-size-width="fit-content">
+  
+</cupra-button>
+
+<div class="hey">
+
+  <h1 class="h1white">SECONDARY</h1>
+    <H1 class="h1white" >L</H1>
+    <cupra-button data-hierarchy="secondary" data-color="dark" data-size="L" data-state="active" data-size-width="fit-content">
+      
+    </cupra-button>
+    <br>
+    <cupra-button data-hierarchy="secondary" data-color="dark" data-size="L" data-state="focus" data-size-width="fit-content">
+      
+    </cupra-button>
+    <br>
+    <cupra-button data-hierarchy="secondary" data-color="dark" data-size="L" data-state="inactive" data-size-width="fit-content">
+      
+    </cupra-button>
+    <H1 class="h1white">M</H1>
+    <cupra-button data-hierarchy="secondary" data-color="dark" data-size="M" data-state="active" data-size-width="fit-content">
+      
+    </cupra-button>
+    <br>
+    <cupra-button data-hierarchy="secondary" data-color="dark" data-size="M" data-state="focus" data-size-width="fit-content">
+      
+    </cupra-button>
+    <br>
+    <cupra-button data-hierarchy="secondary" data-color="dark" data-size="M" data-state="inactive" data-size-width="fit-content">
+      
+    </cupra-button>
+    <H1 class="h1white">S</H1>
+    <cupra-button data-hierarchy="secondary" data-color="dark" data-size="S" data-state="active" data-size-width="fit-content">
+      
+    </cupra-button>
+    <br>
+    <cupra-button data-hierarchy="secondary" data-color="dark" data-size="S" data-state="focus" data-size-width="fit-content">
+      
+    </cupra-button>
+    <br>
+    <cupra-button data-hierarchy="secondary" data-color="dark" data-size="S" data-state="inactive" data-size-width="fit-content">
+      
+    </cupra-button>
+
+    <H1 class="h1white">L</H1>
+<cupra-button data-hierarchy="secondary" data-icon-selection="calendar" data-color="dark" data-size="L" data-state="active" data-size-width="fit-content">
+  
+</cupra-button>
+<br>
+<cupra-button data-hierarchy="secondary" data-icon-selection="calendar" data-color="dark" data-size="L" data-state="focus" data-size-width="fit-content">
+  
+</cupra-button>
+<br>
+<cupra-button data-hierarchy="secondary" data-icon-selection="calendar" data-color="dark" data-size="L" data-state="inactive" data-size-width="fit-content">
+  
+</cupra-button>
+<H1 class="h1white">M</H1>
+<cupra-button data-hierarchy="secondary" data-icon-selection="calendar" data-color="dark" data-size="M" data-state="active" data-size-width="fit-content">
+  
+</cupra-button>
+<br>
+<cupra-button data-hierarchy="secondary" data-icon-selection="calendar" data-color="dark" data-size="M" data-state="focus" data-size-width="fit-content">
+  
+</cupra-button>
+<br>
+<cupra-button data-hierarchy="secondary" data-icon-selection="calendar" data-color="dark" data-size="M" data-state="inactive" data-size-width="fit-content">
+  
+</cupra-button>
+<H1 class="h1white">S</H1>
+<cupra-button data-hierarchy="secondary" data-icon-selection="calendar" data-color="dark" data-size="S" data-state="active" data-size-width="fit-content">
+  
+</cupra-button>
+<br>
+<cupra-button data-hierarchy="secondary" data-icon-selection="calendar" data-color="dark" data-size="S" data-state="focus" data-size-width="fit-content">
+  
+</cupra-button>
+<br>
+<cupra-button data-hierarchy="secondary" data-icon-selection="calendar" data-color="dark" data-size="S" data-state="inactive" data-size-width="fit-content">
+  
+</cupra-button>
+</div>
+<h1>ROUNDED SOLID STYLE</h1>
+<H1>LARGE</H1>
+    <cupra-button data-hierarchy="rounded-solid" data-color="light" data-size="L" data-state="active" data-size-width="fit-content">
+      
+    </cupra-button>
+
+    <br>
+    <cupra-button data-hierarchy="rounded-solid" data-color="light" data-size="L" data-state="focus" data-size-width="fit-content">
+      
+    </cupra-button>
+    <br>
+    <cupra-button data-hierarchy="rounded-solid" data-color="light" data-size="L" data-state="inactive" data-size-width="fit-content">
+      
+    </cupra-button>
+    <br>
+    <cupra-button data-hierarchy="rounded-solid" data-color="light" data-state="active" data-size="L" data-icon-selection="calendar" data-size-width="fit-content">
+      
+    </cupra-button>
+    <br>
+    <cupra-button data-hierarchy="rounded-solid" data-color="light" data-state="focus" data-size="L" data-icon-selection="calendar" data-size-width="fit-content">
+      
+    </cupra-button>
+    <br>
+    <cupra-button data-hierarchy="rounded-solid" data-color="light" data-state="inactive" data-size="L" data-icon-selection="calendar" data-size-width="fit-content">
+      
+    </cupra-button>
+    <H1>MEDIUM</H1>
+
+    <cupra-button data-hierarchy="rounded-solid" data-color="light" data-size="M" data-state="active" data-size-width="fit-content">
+      
+    </cupra-button>
+
+    <br>
+    <cupra-button data-hierarchy="rounded-solid" data-color="light" data-size="M" data-state="focus" data-size-width="fit-content">
+      
+    </cupra-button>
+    <br>
+    <cupra-button data-hierarchy="rounded-solid" data-color="light" data-size="M" data-state="inactive" data-size-width="fit-content">
+      
+    </cupra-button>
+    <br>
+    <cupra-button data-hierarchy="rounded-solid" data-color="light" data-state="active" data-size="M" data-icon-selection="calendar" data-size-width="fit-content">
+      
+    </cupra-button>
+    <br>
+    <cupra-button data-hierarchy="rounded-solid" data-color="light" data-state="focus" data-size="M" data-icon-selection="calendar" data-size-width="fit-content">
+      
+    </cupra-button>
+    <br>
+    <cupra-button data-hierarchy="rounded-solid" data-color="light" data-state="inactive" data-size="M" data-icon-selection="calendar" data-size-width="fit-content">
+      
+    </cupra-button>
+
+
+    <H1>SMALL</H1>
+
+    <cupra-button data-hierarchy="rounded-solid" data-color="light" data-size="S" data-state="active" data-size-width="fit-content">
+      
+    </cupra-button>
+
+    <br>
+    <cupra-button data-hierarchy="rounded-solid" data-color="light" data-size="S" data-state="focus" data-size-width="fit-content">
+      
+    </cupra-button>
+    <br>
+    <cupra-button data-hierarchy="rounded-solid" data-color="light" data-size="S" data-state="inactive" data-size-width="fit-content">
+      
+    </cupra-button>
+    <br>
+    <cupra-button data-hierarchy="rounded-solid" data-color="light" data-state="active" data-size="S" data-icon-selection="calendar" data-size-width="fit-content">
+      
+    </cupra-button>
+    <br>
+    <cupra-button data-hierarchy="rounded-solid" data-color="light" data-state="focus" data-size="S" data-icon-selection="calendar" data-size-width="fit-content">
+      
+    </cupra-button>
+    <br>
+    <cupra-button data-hierarchy="rounded-solid" data-color="light" data-state="inactive" data-size="S" data-icon-selection="calendar" data-size-width="fit-content">
+      
+    </cupra-button>
+
+    <div class="hey">
+      <H1 class="h1white">LARGE</H1>
+    <cupra-button data-hierarchy="rounded-solid" data-color="dark" data-size="L" data-state="active" data-size-width="fit-content">
+      
+    </cupra-button>
+
+    <br>
+    <cupra-button data-hierarchy="rounded-solid" data-color="dark" data-size="L" data-state="focus" data-size-width="fit-content">
+      
+    </cupra-button>
+    <br>
+    <cupra-button data-hierarchy="rounded-solid" data-color="dark" data-size="L" data-state="inactive" data-size-width="fit-content">
+      
+    </cupra-button>
+    <br>
+    <cupra-button data-hierarchy="rounded-solid" data-color="dark" data-state="active" data-size="L" data-icon-selection="calendar" data-size-width="fit-content">
+      
+    </cupra-button>
+    <br>
+    <cupra-button data-hierarchy="rounded-solid" data-color="dark" data-state="focus" data-size="L" data-icon-selection="calendar" data-size-width="fit-content">
+      
+    </cupra-button>
+    <br>
+    <cupra-button data-hierarchy="rounded-solid" data-color="dark" data-state="inactive" data-size="L" data-icon-selection="calendar" data-size-width="fit-content">
+      
+    </cupra-button>
+    <H1 class="h1white">MEDIUM</H1>
+
+    <cupra-button data-hierarchy="rounded-solid" data-color="dark" data-size="M" data-state="active" data-size-width="fit-content">
+      
+    </cupra-button>
+
+    <br>
+    <cupra-button data-hierarchy="rounded-solid" data-color="dark" data-size="M" data-state="focus" data-size-width="fit-content">
+      
+    </cupra-button>
+    <br>
+    <cupra-button data-hierarchy="rounded-solid" data-color="dark" data-size="M" data-state="inactive" data-size-width="fit-content">
+      
+    </cupra-button>
+    <br>
+    <cupra-button data-hierarchy="rounded-solid" data-color="dark" data-state="active" data-size="M" data-icon-selection="calendar" data-size-width="fit-content">
+      
+    </cupra-button>
+    <br>
+    <cupra-button data-hierarchy="rounded-solid" data-color="dark" data-state="focus" data-size="M" data-icon-selection="calendar" data-size-width="fit-content">
+      
+    </cupra-button>
+    <br>
+    <cupra-button data-hierarchy="rounded-solid" data-color="dark" data-state="inactive" data-size="M" data-icon-selection="calendar" data-size-width="fit-content">
+      
+    </cupra-button>
+
+
+    <H1 class="h1white">SMALL</H1>
+
+    <cupra-button data-hierarchy="rounded-solid" data-color="dark" data-size="S" data-state="active" data-size-width="fit-content">
+      
+    </cupra-button>
+
+    <br>
+    <cupra-button data-hierarchy="rounded-solid" data-color="dark" data-size="S" data-state="focus" data-size-width="fit-content">
+      
+    </cupra-button>
+    <br>
+    <cupra-button data-hierarchy="rounded-solid" data-color="dark" data-size="S" data-state="inactive" data-size-width="fit-content">
+      
+    </cupra-button>
+    <br>
+    <cupra-button data-hierarchy="rounded-solid" data-color="dark" data-state="active" data-size="S" data-icon-selection="calendar" data-size-width="fit-content">
+      
+    </cupra-button>
+    <br>
+    <cupra-button data-hierarchy="rounded-solid" data-color="dark" data-state="focus" data-size="S" data-icon-selection="calendar" data-size-width="fit-content">
+      
+    </cupra-button>
+    <br>
+    <cupra-button data-hierarchy="rounded-solid" data-color="dark" data-state="inactive" data-size="S" data-icon-selection="calendar" data-size-width="fit-content">
+      
+    </cupra-button>
+    </div>
+    <br>
+    <h1>ROUNDED OUTLINED</h1>
+    <H1>L</H1>
+    <cupra-button data-hierarchy="rounded-outlined" data-color="light" data-size="L" data-state="active" data-size-width="fit-content">
+      
+    </cupra-button>
+    <br>
+    <cupra-button data-hierarchy="rounded-outlined" data-color="light" data-size="L" data-state="focus" data-size-width="fit-content">
+      
+    </cupra-button>
+    <br>
+    <cupra-button data-hierarchy="rounded-outlined" data-color="light" data-size="L" data-state="inactive" data-size-width="fit-content">
+      
+    </cupra-button>
+    <H1>M</H1>
+    <cupra-button data-hierarchy="rounded-outlined" data-color="light" data-size="M" data-state="active" data-size-width="fit-content">
+      
+    </cupra-button>
+    <br>
+    <cupra-button data-hierarchy="rounded-outlined" data-color="light" data-size="M" data-state="focus" data-size-width="fit-content">
+      
+    </cupra-button>
+    <br>
+    <cupra-button data-hierarchy="rounded-outlined" data-color="light" data-size="M" data-state="inactive" data-size-width="fit-content">
+      
+    </cupra-button>
+    <H1>S</H1>
+    <cupra-button data-hierarchy="rounded-outlined" data-color="light" data-size="S" data-state="active" data-size-width="fit-content">
+      
+    </cupra-button>
+    <br>
+    <cupra-button data-hierarchy="rounded-outlined" data-color="light" data-size="S" data-state="focus" data-size-width="fit-content">
+      
+    </cupra-button>
+    <br>
+    <cupra-button data-hierarchy="rounded-outlined" data-color="light" data-size="S" data-state="inactive" data-size-width="fit-content">
+      
+    </cupra-button>
+
+    <H1>L</H1>
+<cupra-button data-hierarchy="rounded-outlined" data-icon-selection="calendar" data-color="light" data-size="L" data-state="active" data-size-width="fit-content">
+  
+</cupra-button>
+<br>
+<cupra-button data-hierarchy="rounded-outlined" data-icon-selection="calendar" data-color="light" data-size="L" data-state="focus" data-size-width="fit-content">
+  
+</cupra-button>
+<br>
+<cupra-button data-hierarchy="rounded-outlined" data-icon-selection="calendar" data-color="light" data-size="L" data-state="inactive" data-size-width="fit-content">
+  
+</cupra-button>
+<H1>M</H1>
+<cupra-button data-hierarchy="rounded-outlined" data-icon-selection="calendar" data-color="light" data-size="M" data-state="active" data-size-width="fit-content">
+  
+</cupra-button>
+<br>
+<cupra-button data-hierarchy="rounded-outlined" data-icon-selection="calendar" data-color="light" data-size="M" data-state="focus" data-size-width="fit-content">
+  
+</cupra-button>
+<br>
+<cupra-button data-hierarchy="rounded-outlined" data-icon-selection="calendar" data-color="light" data-size="M" data-state="inactive" data-size-width="fit-content">
+  
+</cupra-button>
+<H1>S</H1>
+<cupra-button data-hierarchy="rounded-outlined" data-icon-selection="calendar" data-color="light" data-size="S" data-state="active" data-size-width="fit-content">
+  
+</cupra-button>
+<br>
+<cupra-button data-hierarchy="rounded-outlined" data-icon-selection="calendar" data-color="light" data-size="S" data-state="focus" data-size-width="fit-content">
+  
+</cupra-button>
+<br>
+<cupra-button data-hierarchy="rounded-outlined" data-icon-selection="calendar" data-color="light" data-size="S" data-state="inactive" data-size-width="fit-content">
+  
+</cupra-button>
+
+<div class="hey">
+
+  <h1 class="h1white">ROUNDED OUTLINED</h1>
+    <H1 class="h1white" >L</H1>
+    <cupra-button data-hierarchy="rounded-outlined" data-color="dark" data-size="L" data-state="active" data-size-width="fit-content">
+      
+    </cupra-button>
+    <br>
+    <cupra-button data-hierarchy="rounded-outlined" data-color="dark" data-size="L" data-state="focus" data-size-width="fit-content">
+      
+    </cupra-button>
+    <br>
+    <cupra-button data-hierarchy="rounded-outlined" data-color="dark" data-size="L" data-state="inactive" data-size-width="fit-content">
+      
+    </cupra-button>
+    <H1 class="h1white">M</H1>
+    <cupra-button data-hierarchy="rounded-outlined" data-color="dark" data-size="M" data-state="active" data-size-width="fit-content">
+      
+    </cupra-button>
+    <br>
+    <cupra-button data-hierarchy="rounded-outlined" data-color="dark" data-size="M" data-state="focus" data-size-width="fit-content">
+      
+    </cupra-button>
+    <br>
+    <cupra-button data-hierarchy="rounded-outlined" data-color="dark" data-size="M" data-state="inactive" data-size-width="fit-content">
+      
+    </cupra-button>
+    <H1 class="h1white">S</H1>
+    <cupra-button data-hierarchy="rounded-outlined" data-color="dark" data-size="S" data-state="active" data-size-width="fit-content">
+      
+    </cupra-button>
+    <br>
+    <cupra-button data-hierarchy="rounded-outlined" data-color="dark" data-size="S" data-state="focus" data-size-width="fit-content">
+      
+    </cupra-button>
+    <br>
+    <cupra-button data-hierarchy="rounded-outlined" data-color="dark" data-size="S" data-state="inactive" data-size-width="fit-content">
+      
+    </cupra-button>
+
+    <H1 class="h1white">L</H1>
+<cupra-button data-hierarchy="rounded-outlined" data-icon-selection="calendar" data-color="dark" data-size="L" data-state="active" data-size-width="fit-content">
+  
+</cupra-button>
+<br>
+<cupra-button data-hierarchy="rounded-outlined" data-icon-selection="calendar" data-color="dark" data-size="L" data-state="focus" data-size-width="fit-content">
+  
+</cupra-button>
+<br>
+<cupra-button data-hierarchy="rounded-outlined" data-icon-selection="calendar" data-color="dark" data-size="L" data-state="inactive" data-size-width="fit-content">
+  
+</cupra-button>
+<H1 class="h1white">M</H1>
+<cupra-button data-hierarchy="rounded-outlined" data-icon-selection="calendar" data-color="dark" data-size="M" data-state="active" data-size-width="fit-content">
+  
+</cupra-button>
+<br>
+<cupra-button data-hierarchy="rounded-outlined" data-icon-selection="calendar" data-color="dark" data-size="M" data-state="focus" data-size-width="fit-content">
+  
+</cupra-button>
+<br>
+<cupra-button data-hierarchy="rounded-outlined" data-icon-selection="calendar" data-color="dark" data-size="M" data-state="inactive" data-size-width="fit-content">
+  
+</cupra-button>
+<H1 class="h1white">S</H1>
+<cupra-button data-hierarchy="rounded-outlined" data-icon-selection="calendar" data-color="dark" data-size="S" data-state="active" data-size-width="fit-content">
+  
+</cupra-button>
+<br>
+<cupra-button data-hierarchy="rounded-outlined" data-icon-selection="calendar" data-color="dark" data-size="S" data-state="focus" data-size-width="fit-content">
+  
+</cupra-button>
+<br>
+<cupra-button data-hierarchy="rounded-outlined" data-icon-selection="calendar" data-color="dark" data-size="S" data-state="inactive" data-size-width="fit-content">
+  
+</cupra-button>
+</div>
+<h1>HYPERLINK</h1>
+<h1>L</h1>
+<cupra-button data-hierarchy="hyperlink" data-color="light" data-size="L" data-line="paragraph"></cupra-button>
+<br>
+<cupra-button data-hierarchy="hyperlink" data-color="light" data-size="L" data-line="title"></cupra-button>
+<br>
+<h1>M</h1>
+<cupra-button data-hierarchy="hyperlink" data-color="light" data-size="M" data-line="paragraph"></cupra-button>
+<br>
+<cupra-button data-hierarchy="hyperlink" data-color="light" data-size="M" data-line="title"></cupra-button>
+<h1>S</h1>
+<cupra-button data-hierarchy="hyperlink" data-color="light" data-size="S" data-line="paragraph"></cupra-button>
+<br>
+<cupra-button data-hierarchy="hyperlink" data-color="light" data-size="S" data-line="title"></cupra-button>
+
+<div class="hey">
+
+  <h1 class="h1white">L</h1>
+<cupra-button data-hierarchy="hyperlink" data-color="dark" data-size="L" data-line="paragraph"></cupra-button>
+<br>
+<cupra-button data-hierarchy="hyperlink" data-color="dark" data-size="L" data-line="title"></cupra-button>
+<br>
+<h1 class="h1white">M</h1>
+<cupra-button data-hierarchy="hyperlink" data-color="dark" data-size="M" data-line="paragraph"></cupra-button>
+<br>
+<cupra-button data-hierarchy="hyperlink" data-color="dark" data-size="M" data-line="title"></cupra-button>
+<h1 class="h1white">S</h1>
+<cupra-button data-hierarchy="hyperlink" data-color="dark" data-size="S" data-line="paragraph"></cupra-button>
+<br>
+<cupra-button data-hierarchy="hyperlink" data-color="dark" data-size="S" data-line="title"></cupra-button>
+</div>
+<h1>TERTIARY</h1>
+<h1>L</h1>
+
+<cupra-button data-hierarchy="tertiary" data-color="light" data-size="L" data-state="active" data-size-width="fit-content">
+</cupra-button>
+<br>
+<cupra-button data-hierarchy="tertiary" data-color="light" data-size="L" data-state="focus" data-size-width="fit-content">
+</cupra-button>
+<br>
+<cupra-button data-hierarchy="tertiary" data-color="light" data-size="L" data-state="inactive" data-size-width="fit-content">
+</cupra-button>
+<h1>M</h1>
+
+<cupra-button data-hierarchy="tertiary" data-color="light" data-size="M" data-state="active" data-size-width="fit-content">
+</cupra-button>
+<br>
+<cupra-button data-hierarchy="tertiary" data-color="light" data-size="M" data-state="focus" data-size-width="fit-content">
+</cupra-button>
+<br>
+<cupra-button data-hierarchy="tertiary" data-color="light" data-size="M" data-state="inactive" data-size-width="fit-content">
+</cupra-button>
+
+<h1>S</h1>
+
+<cupra-button data-hierarchy="tertiary" data-color="light" data-size="S" data-state="active" data-size-width="fit-content">
+</cupra-button>
+<br>
+<cupra-button data-hierarchy="tertiary" data-color="light" data-size="S" data-state="focus" data-size-width="fit-content">
+</cupra-button>
+<br>
+<cupra-button data-hierarchy="tertiary" data-color="light" data-size="S" data-state="inactive" data-size-width="fit-content">
+</cupra-button>
+<div class="hey">
+
+  <h1 class="h1white">L</h1>
+
+<cupra-button data-hierarchy="tertiary" data-color="dark" data-size="L" data-state="active" data-size-width="fit-content">
+</cupra-button>
+<br>
+<cupra-button data-hierarchy="tertiary" data-color="dark" data-size="L" data-state="focus" data-size-width="fit-content">
+</cupra-button>
+<br>
+<cupra-button data-hierarchy="tertiary" data-color="dark" data-size="L" data-state="inactive" data-size-width="fit-content">
+</cupra-button>
+<h1 class="h1white">M</h1>
+
+<cupra-button data-hierarchy="tertiary" data-color="dark" data-size="M" data-state="active" data-size-width="fit-content">
+</cupra-button>
+<br>
+<cupra-button data-hierarchy="tertiary" data-color="dark" data-size="M" data-state="focus" data-size-width="fit-content">
+</cupra-button>
+<br>
+<cupra-button data-hierarchy="tertiary" data-color="dark" data-size="M" data-state="inactive" data-size-width="fit-content">
+</cupra-button>
+
+<h1 class="h1white">S</h1>
+
+<cupra-button data-hierarchy="tertiary" data-color="dark" data-size="S" data-state="active" data-size-width="fit-content">
+</cupra-button>
+<br>
+<cupra-button data-hierarchy="tertiary" data-color="dark" data-size="S" data-state="focus" data-size-width="fit-content">
+</cupra-button>
+<br>
+<cupra-button data-hierarchy="tertiary" data-color="dark" data-size="S" data-state="inactive" data-size-width="fit-content">
+</cupra-button>
+</div>
+</body>
+</html>
