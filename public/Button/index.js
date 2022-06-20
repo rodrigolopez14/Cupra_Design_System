@@ -87,11 +87,12 @@ class vanillaButton extends HTMLElement {
         this.dataAttributes[CHILDREN_ATTRIBUTE] = this.buttonOrAnchor[0].textContent
         const button = COMPONENTS[stylesKeys[COMPONENT_VARIANT_KEY]] (this.dataAttributes)
         if (this.dataAttributes[STATE_ATTRIBUTE]!== INACTIVE_OPTION) button.onclick = () => {this.buttonOrAnchor[0].click()}
-       
-        this.shadow.appendChild(slotContainer)
-            slotContainer.appendChild(slotSubComponent)
-                        slotSubComponent.appendChild(this.buttonOrAnchor[0])
-        this.shadow.appendChild(button) 
+        if (this.shadow.children.length === 0) {
+          this.shadow.appendChild(slotContainer)
+              slotContainer.appendChild(slotSubComponent)
+                          slotSubComponent.appendChild(this.buttonOrAnchor[0])
+          this.shadow.appendChild(button) 
+        }
         this.style.display = 'contents'
       }
       connectedCallback() {
