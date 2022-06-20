@@ -52,7 +52,7 @@ class vanillaRegularAccordion extends HTMLElement {
                 return;
             }
         }
-        if (name === TOTAL_HEIGHT_ATTRIBUTE)
+        else if (name === TOTAL_HEIGHT_ATTRIBUTE)
         {
             if (oldValue!==newValue)
             {
@@ -64,18 +64,19 @@ class vanillaRegularAccordion extends HTMLElement {
     }
     connectedCallback() {
         const customClass = this
-        
+        //Define attributes of component
         const attributes = JSON.parse(this.getAttribute(TEMPORARY_ATTRIBUTE))
         this.removeAttribute(TEMPORARY_ATTRIBUTE)
         this.styles = setStyle(attributes[STYLE_KEY])
         this.totalHeight = this.styles[CONTENT_SUBCOMPONENT][OPEN_ACCORDION_EVENT].height
 
+        //Create elements and assign styling
         const container = document.createElement('div')
         const stylesProccessedContainer = processStyle(container,this.styles[CONTAINER_SUBCOMPONENT])
         this.closeStyles.push(...stylesProccessedContainer[DEFAULT_EVENT])
         this.openStyles.push(...stylesProccessedContainer[OPEN_ACCORDION_EVENT])
         
-        const title = document.createElement('button')
+        const title = document.createElement('div')
         const stylesProccessedTitle = processStyle(title,this.styles[TITLE_SUBCOMPONENT])
         this.closeStyles.push(...stylesProccessedTitle[DEFAULT_EVENT])
         this.openStyles.push(...stylesProccessedTitle[OPEN_ACCORDION_EVENT])
@@ -90,15 +91,14 @@ class vanillaRegularAccordion extends HTMLElement {
             
 
         const contentToAppend = document.createElement('slot')
-        customClass.content.appendChild(contentToAppend)
+        
 
         const textTitleNode = document.createTextNode(attributes[TITLE_ATTRIBUTE])
         const textTitle= document.createElement('div')
         const stylesProccessedText = processStyle(textTitle,this.styles[TEXT_TITLE_SUBCOMPONENT])
         this.closeStyles.push(...stylesProccessedText[DEFAULT_EVENT])
         this.openStyles.push(...stylesProccessedText[OPEN_ACCORDION_EVENT])
-        textTitle.appendChild(textTitleNode)
-        title.appendChild(textTitle)
+        
 
         this.iconParent = document.createElement('div')
         const stylesProccessedIconParent = processStyle (this.iconParent, this.styles[ICON_PARENT_TITLE_SUBCOMPONENT])
@@ -111,15 +111,8 @@ class vanillaRegularAccordion extends HTMLElement {
         this.iconChild.setAttribute(ICON_COLOR_ATTRIBUTE,this.styles[ICON_PARENT_TITLE_SUBCOMPONENT].color)
         this.iconChild.setAttribute(ICON_HEIGHT_ATTRIBUTE,this.styles[ICON_CHILD_SUBCOMPONENT].height)
         this.iconChild.setAttribute(ICON_WIDTH_ATTRIBUTE,this.styles[ICON_CHILD_SUBCOMPONENT].width)
-        this.iconParent.appendChild(this.iconChild)
-      
-        title.appendChild(this.iconParent)
-       
-        
-
-       
-        
-
+         
+        //Add some behaviour
         const clickAccordion = (event) => {
             event.preventDefault()
             const state = customClass.getAttribute(OPEN_ATTRIBUTE)
@@ -137,10 +130,17 @@ class vanillaRegularAccordion extends HTMLElement {
         }
         title.addEventListener('click',clickAccordion)
        
-
+        //Establish how they are related
         container.appendChild(title)
+            title.appendChild(textTitle)
+                textTitle.appendChild(textTitleNode)
+            title.appendChild(this.iconParent)
+                this.iconParent.appendChild(this.iconChild)      
         container.appendChild(customClass.content)
+            customClass.content.appendChild(contentToAppend)
         if (this.shadow.children.length === 0)  this.shadow.appendChild(container) 
+
+        //Establish default styling
         customClass.closeStyles.forEach((style) =>  style())
         this.setAttribute(OPEN_ATTRIBUTE,attributes[OPEN_ATTRIBUTE])
         

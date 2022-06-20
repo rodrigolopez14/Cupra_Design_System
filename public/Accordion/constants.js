@@ -1,3 +1,5 @@
+import {MAX_WIDTH_MEDIUM_OPTION, MAX_WIDTH_SMALL_OPTION} from '../commonMethodsAndConstants/Styles/commonConstants.js'
+
 export const CUSTOM_ELEMENT_NAME = "cupra-accordion"
 //variants
 export const REGULAR_ACCORDION_COMPONENT = 'regular accordion'
@@ -7,12 +9,12 @@ export const SIZE_ATTRIBUTE = "data-size";
 export const OPEN_ATTRIBUTE = "data-open";
 export const TITLE_ATTRIBUTE = "data-title";
 // color options
-export const BLACK_OPTION = "black";
-export const WHITE_OPTION = "white";
+export const DARK_OPTION = "dark";
+export const LIGHT_OPTION = "light";
 //size options
-export const BIG_OPTION = "L";
-export const SMALL_OPTION = "M";
-export const SMALLEST_OPTION = "S";
+export const LARGE_OPTION = "L";
+export const MEDIUM_OPTION = "M";
+export const SMALL_OPTION = "S";
 // open options
 export const OPENED_OPTION = "isOpen";
 export const CLOSED_OPTION = "isClosed";
@@ -24,13 +26,27 @@ export const TOTAL_HEIGHT_ATTRIBUTE = 'data-total-height'
 const ATTRIBUTES = [];
 ATTRIBUTES.push({
     attributeName: COLOR_ATTRIBUTE,
-    defaultValue : BLACK_OPTION,
+    defaultValue : DARK_OPTION,
     proccessValue: (value) => {return   value}
 
 })
 ATTRIBUTES.push({
     attributeName: SIZE_ATTRIBUTE,
-    defaultValue : BIG_OPTION,
+    defaultValue : (() => {
+        const vw = Math.max(document.documentElement.clientWidth || 0, window.innerWidth || 0)
+        if (vw < MAX_WIDTH_SMALL_OPTION)
+        {
+           return SMALL_OPTION;
+        }
+        else if (vw >= MAX_WIDTH_SMALL_OPTION && vw < MAX_WIDTH_MEDIUM_OPTION)
+        {
+           return MEDIUM_OPTION;
+        }
+        else if (vw >= MAX_WIDTH_MEDIUM_OPTION)
+        {
+           return LARGE_OPTION;
+        }
+    }) (),
     proccessValue: (value) => {return   value}
 
 })
@@ -48,6 +64,16 @@ ATTRIBUTES.push({
 })
 
 export {ATTRIBUTES};
+
+//SubCOmponents
+// SHADOW DOM
+// I----------->CONTAINER_SUBCOMPONENT
+//                  I----------->TITLE_SUBCOMPONENT
+//                  I                  I----------->TEXT_TITLE_SUBCOMPONENT
+//                  I                                   I----------->ICON_PARENT_TITLE_SUBCOMPONENT
+//                  I                                                   I----------->ICON_CHILD_SUBCOMPONENT
+//                  I----------->CONTENT_SUBCOMPONENT
+
 
 //Definining names of subcomponents of component. This is used to identify the style to assign that subcomponent
  export const CONTAINER_SUBCOMPONENT = 'container'
