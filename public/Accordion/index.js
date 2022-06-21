@@ -11,29 +11,30 @@ class vanillaAccordion extends HTMLElement {
         super();
     }
     
-    construction () {
-        this.style.display = 'initial'
-        const attributes = {}
-        ATTRIBUTES.forEach((ATTRIBUTE)=>{ 
-            if (this.getAttribute(ATTRIBUTE.attributeName)) attributes[ATTRIBUTE.attributeName] = ATTRIBUTE.proccessValue(this.getAttribute(ATTRIBUTE.attributeName))
-            else attributes[ATTRIBUTE.attributeName] = ATTRIBUTE.defaultValue
-                        })
-        const styleAttributes = {...attributes}
-        delete styleAttributes[OPEN_ATTRIBUTE];
-        delete styleAttributes[TITLE_ATTRIBUTE];
-        const keys = setKeys(styleAttributes)
-        attributes[STYLE_KEY] = keys[STYLE_KEY]
-        const accordion = COMPONENTS[keys[COMPONENT_VARIANT_KEY]] (attributes, this)
-        
-       if (this.children.length === 0) this.appendChild(accordion)
-    }
+   
     connectedCallback() {
         const WebComponent = this
         WebComponent.style.display='none'
+        const constructionAccordion = () => {
+            WebComponent.style.display = 'initial'
+            const attributes = {}
+            ATTRIBUTES.forEach((ATTRIBUTE)=>{ 
+                if (WebComponent.getAttribute(ATTRIBUTE.attributeName)) attributes[ATTRIBUTE.attributeName] = ATTRIBUTE.proccessValue(WebComponent.getAttribute(ATTRIBUTE.attributeName))
+                else attributes[ATTRIBUTE.attributeName] = ATTRIBUTE.defaultValue
+                            })
+            const styleAttributes = {...attributes}
+            delete styleAttributes[OPEN_ATTRIBUTE];
+            delete styleAttributes[TITLE_ATTRIBUTE];
+            const keys = setKeys(styleAttributes)
+            attributes[STYLE_KEY] = keys[STYLE_KEY]
+            const accordion = COMPONENTS[keys[COMPONENT_VARIANT_KEY]] (attributes, WebComponent)
+            
+           if (WebComponent.children.length === 0) WebComponent.appendChild(accordion)
+        }
         if (document.readyState === 'loading') {  // Loading hasn't finished yet
-            document.addEventListener('DOMContentLoaded', WebComponent.construction);
+            document.addEventListener('DOMContentLoaded', constructionAccordion);
           } else {  // `DOMContentLoaded` has already fired
-            WebComponent.construction();
+            constructionAccordion();
           }
         
       }
