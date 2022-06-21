@@ -595,10 +595,10 @@ tertiaryStyles.push(styleWrapper18)
 // new boton
 
 
-// const copyTertiaryStyles = []
-// tertiaryStyles.forEach((style,index) => {
-//     copyTertiaryStyles.push(JSON.parse(JSON.stringify(style)))
-//     copyTertiaryStyles[index][PATH_STYLE][WIDTH_ATTRIBUTE] = FULL_OPTION
-// })
-// tertiaryStyles.push(...copyTertiaryStyles)
+const copyTertiaryStyles = []
+tertiaryStyles.forEach((style,index) => {
+    copyTertiaryStyles.push(JSON.parse(JSON.stringify(style)))
+    copyTertiaryStyles[index][PATH_STYLE][WIDTH_ATTRIBUTE] = FULL_OPTION
+})
+tertiaryStyles.push(...copyTertiaryStyles)
 export  {tertiaryStyles};
